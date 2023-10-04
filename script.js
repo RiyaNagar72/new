@@ -1,10 +1,10 @@
-const API_KEY = "cdb3c016f48e424fb72ca5e28087574d"
+const api_key = "cdb3c016f48e424fb72ca5e28087574d"
 const url = "https://newsapi.org/v2/everything?q="
 
 
 
 async function fetchData(query){
-    const res = await fetch(`${url}${query}&apiKey=${API_KEY}`)
+    const res = await fetch(`${url}${query}&apikey=${api_key}`)
     const data = await res.json()
     return data
 }
